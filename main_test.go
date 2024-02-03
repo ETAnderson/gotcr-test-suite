@@ -21,11 +21,5 @@ func TestGetCurrentDirectoryIsValidPath(t *testing.T) {
 }
 
 func TestIsMathReal(t *testing.T) {
-	// Invoke the isMathReal function
-	isMathReal, err := isMathReal()
-
-	// Check for errors 
-	if err != nil {
-		t.fatal("Danger Math is currently not real!: %v ", err)
-	}
-
+	isMathReal(t)
+}
